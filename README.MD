@@ -1,3 +1,5 @@
+### Note: Earlier development is done in https://github.com/krsamir/college-suite-backend and https://github.com/krsamir/college-suite-frontend repository.
+
 # Project
 
 ## Quick Start
