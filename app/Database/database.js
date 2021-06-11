@@ -1,5 +1,7 @@
 import mysql from "mysql";
-import { config } from "dotenv";
+import pkg from "dotenv";
+const { config } = pkg;
+// import { config } from "dotenv";
 config();
 const {
   DATABASE_HOST,
@@ -23,8 +25,6 @@ const db = mysql.createPool({
 // });
 db.query("SELECT 1 + 1 AS solution", function (error, results, fields) {
   if (error) console.log(error);
-  console.log(
-    `Database connection has been established.`
-  );
+  console.log(`Database connection has been established.`);
 });
 export default db;
